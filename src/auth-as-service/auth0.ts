@@ -13,7 +13,7 @@ export const authorizeInAuth0 = async (conn: ConnectionObject): Promise<Auth0Pac
       clientId: conn.auth0ClientId,
       clientSecret: conn.auth0ClientSecret,
     });
-    const loginResponse = await auth0Authentication.clientCredentialsGrant({
+    const loginResponse: any = await auth0Authentication.clientCredentialsGrant({
       audience: conn.auth0Audience,
     });
 
