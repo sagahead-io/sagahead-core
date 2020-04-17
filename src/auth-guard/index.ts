@@ -1,5 +1,5 @@
 import { AuthChecker, ResolverData } from 'type-graphql';
-import createLogger from '../../../logger/src';
+import createLogger from 'sagahead-logger';
 import { AuthGuardContext, AuthGuardAuthedAccountData } from './types';
 
 export const authGuard = async <T extends AuthGuardContext>(

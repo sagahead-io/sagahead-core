@@ -1,3 +1,3 @@
-# Simple logger
+# Some libs
 
-`yarn add sagahead-logger`
+`yarn add sagahead-core`
