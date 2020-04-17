@@ -1,0 +1,42 @@
+{
+  "name": "sagahead-core",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && npx tsc",
+    "test": "jest",
+    "clean": "rm -rf './dist'",
+    "dev": "npx nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "format": "npx prettier --write './src/**/*.{ts,tsx,js,jsx}'",
+    "format:check": "npx prettier --check './src/**/*.{ts,tsx,js,jsx}'"
+  },
+  "files": [
+    "/dist"
+  ],
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "apollo-boost": "^0.4.7",
+    "auth0": "^2.20.0",
+    "cross-fetch": "^3.0.4",
+    "graphql": "^14.5.8",
+    "graphql-tag": "^2.10.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwks-rsa": "^1.6.0",
+    "type-graphql": "^0.17.5"
+  },
+  "devDependencies": {
+    "@types/auth0": "^2.20.0",
+    "@types/jest": "^24.0.18",
+    "@types/jsonwebtoken": "^8.3.5",
+    "@types/node": "^12.7.2",
+    "@types/uuid": "^3.4.5",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.1",
+    "sinon": "^7.5.0",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.8.3"
+  }
+}
